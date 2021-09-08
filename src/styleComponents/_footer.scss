@@ -1,0 +1,110 @@
+.border-bottom {
+  border-bottom: 1.5px solid #fff;
+}
+
+.footer {
+  background: linear-gradient(180deg, #eb1b02 -19.88%, #374780 100.04%);
+  color: #fff;
+  padding: 70px 40px;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+  &__options {
+    font-size: 18px;
+    display: flex;
+    position: relative;
+  }
+
+  &__offices {
+    font-weight: 400;
+  }
+  &__country {
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 20px;
+    margin-left: 5px;
+    background: url('../images/arrowB.png') no-repeat left;
+    position: relative;
+  }
+  &__options-drop {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  &__options-drop span {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #c7251c;
+    font-size: 16px;
+    min-width: 100%;
+    display: block;
+    font-weight: 500;
+  }
+  &__country:hover &__options-drop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &__contact {
+    padding: 25px 0 40px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__contact:last-child {
+    padding-bottom: 0;
+  }
+}
+.contact {
+  &__city {
+    font-weight: 400;
+    font-size: 18px;
+    width: 22%;
+  }
+  &__adress {
+    font-weight: 400;
+    font-size: 18px;
+    width: 20%;
+    padding-left: 25px;
+    background: url('../images/checkedI.png') no-repeat -10px -5px;
+  }
+  &__phone {
+    width: 25%;
+    padding-left: 5%;
+  }
+  &__phone a {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+  }
+  &__call {
+    color: #fff;
+    width: 15%;
+    max-width: 160px;
+    justify-self: flex-end;
+    padding: 16px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border-radius: 40px;
+  }
+  &__call span {
+    color: #fff;
+  }
+  &__call:hover {
+    background-color: #fff;
+  }
+  &__call:hover span {
+    background: linear-gradient(to right, var(--red), var(--violet));
+    background-clip: text;
+    color: transparent;
+  }
+}

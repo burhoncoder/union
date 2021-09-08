@@ -1,0 +1,71 @@
+.comments {
+  &__item {
+    position: relative;
+    padding: 0 60px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  &__item--none {
+    border-radius: 0;
+  }
+  &__item::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../images/playI.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  &__item--none::after {
+    display: none;
+  }
+  &__banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-container {
+    max-width: 1200px;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: '';
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c20;
+  }
+  .swiper-button-prev {
+    left: 0%;
+  }
+  .swiper-button-next {
+    left: 100%;
+    transform: translate(-100%);
+  }
+  .swiper-button-prev--white,
+  .swiper-button-next--white {
+    background-color: transparent;
+  }
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    fill: #fff;
+    width: 15px;
+    height: 25px;
+  }
+  .swiper-button-prev--white svg,
+  .swiper-button-next--white svg {
+    fill: #d9dce3;
+  }
+}

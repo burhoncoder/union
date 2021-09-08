@@ -1,0 +1,40 @@
+.contact-inside {
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &-left {
+    width: 38%;
+    margin-right: 20px;
+  }
+  &-right {
+    width: 60%;
+  }
+  &__inf:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    line-height: 120%;
+  }
+  &__text a {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    line-height: 120%;
+  }
+
+  &__footer {
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #eb1b02 -78.88%, #374780 119.52%);
+  }
+  &__footer-img {
+    margin: auto;
+  }
+}

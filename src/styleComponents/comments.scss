@@ -1,0 +1,23 @@
+.person-comments .swiper-wrapper {
+  max-width: fit-content;
+}
+.person__comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-comment {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #111111;
+  opacity: 0.5;
+}
+.swiper-container-help {
+  overflow: hidden;
+}
