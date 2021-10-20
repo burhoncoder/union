@@ -8,10 +8,15 @@ searchIcon[0].addEventListener("click", () => {
 
 const burger = document.querySelector(".header__burger");
 if (burger) {
-  const burgerMenu = document.querySelector(".nav__list");
+  const burgerMenu = document.querySelector(".burger");
+  const close = burgerMenu.querySelector(".burger__head > img");
   burger.addEventListener("click", () => {
-    burgerMenu.classList.toggle("nav__list--active");
+    burgerMenu.classList.toggle("burger--active");
   });
+  close.addEventListener("click", () => {
+    burgerMenu.classList.remove("burger--active");
+  })
+  
 }
 
 const univerSlider = document.querySelector(".universities");

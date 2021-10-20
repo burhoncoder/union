@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>UNION-EDUCATION</title>
+  </head>
+  <body>
+    @@include('./layouts/_header.html')
+    <main class="main">
+      <div class="container">
+        <section class="contact-inside comments mb">
+          <div class="title">
+            <h1 class="title__text">Контакты</h1>
+            <div class="menu-wrapper">
+              <ul class="menu">
+                <li class="menu__item menu__item--active">
+                  <button href="" class="menu__link">
+                    Таш<span>кент</span>
+                  </button>
+                </li>
+                <li class="menu__item">
+                  <button href="" class="menu__link">
+                    Сама<span>рканд</span>
+                  </button>
+                </li>
+                <li class="menu__item">
+                  <button href="" class="menu__link">
+                    Тер<span>мез</span>
+                  </button>
+                </li>
+                <li class="menu__item">
+                  <button href="" class="menu__link">Москва</button>
+                </li>
+                <li class="menu__item">
+                  <button href="" class="menu__link">
+                    Санкт <span>-Петербург</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-inside__content">
+            <div class="contact-inside-left">
+              <div class="contact-inside__inf">
+                <p class="contact-inside__text">Наш адрес</p>
+                <p class="contact-inside__text">
+                  Торгово-офисный центр Mirabad Plaza,
+                </p>
+                <p class="contact-inside__text">
+                  7 офис, 2 этаж, ул. Мирабад, 2/1
+                </p>
+              </div>
+              <div class="contact-inside__inf">
+                <p class="contact-inside__text">info@unionstudy.uz</p>
+                <p class="contact-inside__text">
+                  <a href="#" tel="+998 78 122 41 48"> +998 78 122 41 48 </a>
+                </p>
+                <p class="contact-inside__text">
+                  <a href="#" tel="+998 98 111 41 48"> +998 98 111 41 48 </a>
+                </p>
+              </div>
+              <div class="contact-inside__inf">
+                <p class="contact-inside__text">
+                  <a class="underline" href="#"> Google Map </a>
+                </p>
+                <p class="contact-inside__text">
+                  <a class="underline" href="#"> CityMapper </a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-inside-right">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="comments__item comments__item--none">
+                      <img
+                        class="comments__banner"
+                        src="./images/contact-inside.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="comments__item comments__item--none">
+                      <img
+                        class="comments__banner"
+                        src="./images/contact-inside.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="comments__item comments__item--none">
+                      <img
+                        class="comments__banner"
+                        src="./images/contact-inside.jpg"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="swiper-button-prev white swiper-button-prev--white"
+                >
+                  <svg viewbox="0 0 22 40" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.0228 38.3922C19.7198 39.7358 17.615 39.7358 16.3121 38.3922L0.977221 22.5788C-0.32574 21.2351 -0.32574 19.0647 0.977221 17.721L16.3121 1.90762C17.615 0.563999 19.7198 0.563999 21.0228 1.90762C22.3257 3.25125 22.3257 5.42172 21.0228 6.76534L8.05999 20.1671L21.0228 33.5345C22.3257 34.8781 22.2923 37.083 21.0228 38.3922Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="swiper-button-next white swiper-button-next--white"
+                >
+                  <svg viewbox="0 0 23 40" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.92058 38.3922C3.22354 39.7358 5.32833 39.7358 6.63129 38.3922L21.9661 22.5788C23.2691 21.2351 23.2691 19.0647 21.9661 17.721L6.63129 1.90762C5.32833 0.563999 3.22354 0.563999 1.92058 1.90762C0.617619 3.25125 0.617619 5.42172 1.92058 6.76534L14.8834 20.1671L1.92058 33.5345C0.617619 34.8781 0.651028 37.083 1.92058 38.3922Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      @@include('./layouts/_forma.html')
+    </main>
+    <footer class="contact-inside__footer">
+      <img
+        class="contact-inside__footer-img"
+        src="./images/footer-logo.png"
+        alt="img"
+      />
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</html>

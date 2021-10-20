@@ -1,0 +1,37 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-100%);
+  background-image: linear-gradient(to right, var(--red), var(--violet));
+  max-width: 250px;
+  width: 100%;  
+  height: 100vh;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: initial;
+  &__head {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  &__head img {
+    width: 20px;
+    height: 20px;
+  }
+  .nav__item {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+.burger--active {
+  transform: translateX(0%);
+  // .nav__item .header-top__contact {
+  //   font-size: 14px;
+  //   background-size: 15px 15px;
+  // }
+}
