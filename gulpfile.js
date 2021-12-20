@@ -1,14 +1,14 @@
-const { src, dest, parallel, series, watch } = require('gulp'),
-  browsersync = require('browser-sync').create(),
-  fileInclude = require('gulp-file-include'),
-  del = require('del'),
-  scss = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
-  imagemin = require('gulp-imagemin'),
-  uglify = require('gulp-uglify-es').default;
+const { src, dest, parallel, series, watch } = require("gulp"),
+  browsersync = require("browser-sync").create(),
+  fileInclude = require("gulp-file-include"),
+  del = require("del"),
+  scss = require("gulp-sass"),
+  autoprefixer = require("gulp-autoprefixer"),
+  imagemin = require("gulp-imagemin"),
+  uglify = require("gulp-uglify-es").default;
 
-let project_folder = 'dist';
-let source_folder = 'src';
+let project_folder = "dist";
+let source_folder = "src";
 
 const path = {
   build: {
@@ -54,8 +54,8 @@ function html() {
 
 function css() {
   return src(path.src.css)
-    .pipe(scss({ outputStyle: 'extended' }))
-    .pipe(autoprefixer({ overrideBrowserslist: ['last 100 versions'] }))
+    .pipe(scss({ outputStyle: "extended" }))
+    .pipe(autoprefixer({ overrideBrowserslist: ["last 100 versions"] }))
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream());
 }
@@ -102,3 +102,4 @@ let build = series(clean, parallel(css, html, js, images, fonts));
 let watcher = parallel(build, watchFiles, browserSync);
 
 exports.default = watcher;
+exports.build = build;

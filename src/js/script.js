@@ -15,8 +15,7 @@ if (burger) {
   });
   close.addEventListener("click", () => {
     burgerMenu.classList.remove("burger--active");
-  })
-  
+  });
 }
 
 const univerSlider = document.querySelector(".universities");
@@ -67,28 +66,6 @@ if (menuList) {
   });
 }
 
-const commentSliderHelp = document.querySelector(".swiper-container-help");
-if (commentSliderHelp) {
-  const sliderHelp = new Swiper(".swiper-container-help", {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    loop: true,
-    breakpoints: {
-      100: {
-        slidesPerView: 2,
-      },
-      550: {
-        slidesPerView: 3,
-      },
-      767: {
-        slidesPerView: 4,
-      },
-      991: {
-        slidesPerView: 5,
-      },
-    },
-  });
-}
 const commentsSlider = document.querySelectorAll(".comments");
 if (commentsSlider) {
   commentsSlider.forEach((item) => {
